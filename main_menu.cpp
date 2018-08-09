@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include "tolower.cpp"
-#include "game_start.cpp"
 
 
 using namespace std;
@@ -9,7 +8,7 @@ using namespace std;
 //displays welcome message and menu options
 void show_menu_text(){
 	cout << "~~~~~~~~~~~~~~~" << endl;
-	string welcome_message = "Welcome to Deceiver";
+	string welcome_message = "Welcome to *game name here*";
 	cout << welcome_message << endl;
 	cout << "Select an option:" << endl;
 	cout << "Play" << endl;
@@ -20,7 +19,8 @@ void show_menu_text(){
 //handle what the player inputs
 bool select_main_menu_option(){
 	
-	string main_option; //string to hold the text that the player enters
+	//string to hold the text that the player enters
+	string main_option;
 	getline(cin,main_option);
 	main_option = convert_to_lower(main_option);
 	
@@ -29,8 +29,7 @@ bool select_main_menu_option(){
 	}
 	//to start a new game
 	if (main_option == "play"){
-		cout << "So you wish to embark on an adventure? So be it..." << endl;
-		opening_sequence();
+		//TODO: call function to start a new game
 	}
 	else{
 		cout << "Menu Choice Not Valid" << endl;
