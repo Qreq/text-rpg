@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "tolower.cpp"
+#include "game_start.cpp"
 
 
 using namespace std;
@@ -29,7 +30,9 @@ bool select_main_menu_option(){
 	}
 	//to start a new game
 	if (main_option == "play"){
-		//TODO: call function to start a new game
+		cout << "You wish to embark along the path of the underlings?  So be it..." << endl;
+		cout << "~~~~~~~~~~~~~~~~~" << endl;
+		opening_sequence();
 	}
 	else{
 		cout << "Menu Choice Not Valid" << endl;
