@@ -1,8 +1,6 @@
 #include <iostream>
-#include "game_main_functions.cpp"
-void await_input(){
-	
-}
+#include "main_menu.cpp"
+
 using namespace std;
 
 int main(){
